@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using NEW.Engine;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,7 +17,15 @@ public class LoaderManager : MonoBehaviour
 
     [HideInInspector]
     public delegate void ProgressDelegate(float progress);
+    
 
+    //If need something on loadLevel, uncomment this function
+    //private voeid OnLevelWasLoaded(int level) {
+    ////    Conditional that compare the level loaded with the int in Scenes Enum
+    ////    uncomment this if is needed or create ur own switch
+    ////    if(lvel == (int)Scenes.Lobby) {
+    ////    }
+    //}
 
     public void LoadScene(Scenes sceneToLoad) {
         switch (sceneToLoad) {
