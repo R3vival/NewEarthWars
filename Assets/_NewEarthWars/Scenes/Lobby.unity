@@ -324,7 +324,6 @@ MonoBehaviour:
     type: 3}
   garaje: {fileID: 668220559}
   SelectedFactions: 0
-  tanksCreated: []
 --- !u!1 &305509490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,7 +4076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 0
+  m_ShowMaskGraphic: 1
 --- !u!114 &2092640531
 MonoBehaviour:
   m_ObjectHideFlags: 0

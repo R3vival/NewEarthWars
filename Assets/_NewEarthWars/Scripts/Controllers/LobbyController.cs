@@ -12,13 +12,10 @@ public class LobbyController : MonoBehaviour
     private TanksFactory tanksFactory;
 
     public Factions SelectedFactions;
-
-    [SerializeField] List<Tank> tanksCreated;
     string TankName = "";
 
     private void Start() {
 
-        tanksCreated = new List<Tank>();
         tanksFactory = new TanksFactory();
         SelectedFactions = Factions.Ecother;        
     }
@@ -53,6 +50,6 @@ public class LobbyController : MonoBehaviour
     }
 
     public void SetName(TextMeshProUGUI value) {
-        TankName = value.text;
+        TankName = value.text == "" ? SelectedFactions + " Tank" : value.text;
     }
 }
