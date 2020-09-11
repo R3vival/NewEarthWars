@@ -5,19 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/TanksMultiplayer/Scenes/Intro.unity
     guid: c5020d3d185efba4e960e467c526c1ac
-  - enabled: 0
+  - enabled: 1
     path: Assets/TanksMultiplayer/Scenes/CTF_Game.unity
     guid: f7412abe5586cb44e9a3a394667af53b
-  - enabled: 0
+  - enabled: 1
     path: Assets/TanksMultiplayer/Scenes/TDM_Game.unity
     guid: 31e6264386ab7524c8b05daefe87bec3
-  - enabled: 1
-    path: Assets/_NewEarthWars/Scenes/Loader.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/_NewEarthWars/Scenes/Lobby.unity
-    guid: 7bc2ecd76fb2dd74183785949a25ec4b
   m_configObjects: {}

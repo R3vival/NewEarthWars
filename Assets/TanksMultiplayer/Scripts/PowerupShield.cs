@@ -8,8 +8,8 @@ namespace TanksMP
     /// <summary>
     /// Custom powerup implementation for adding player shield points.
     /// </summary>
-	public class PowerupShield : Collectible 
-	{
+	public class PowerupShield : Collectible
+    {
         /// <summary>
         /// Amount of shield points to add per consumption.
         /// </summary>
@@ -21,20 +21,22 @@ namespace TanksMP
         /// Check for the current shield and adds additional shield points.
         /// </summary>
 		public override bool Apply(Player p)
-		{
+        {
             if (p == null)
                 return false;
 
+            int value = p.GetView().GetShield();
+
             //don't add shield if it is at the maximum already
-            if (p.shield == amount)
+            if (value == amount)
                 return false;
 
             //assign absolute shield points to player
             //we can't go over the maximum thus no need to check it here
-            p.shield = amount;
+            p.GetView().SetShield(amount);
 
-            //return successful consumption
+            //return successful collection
             return true;
-		}
-	}
+        }
+    }
 }

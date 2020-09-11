@@ -8,13 +8,13 @@ namespace TanksMP
     /// <summary>
     /// Custom powerup implementation for changing the player's bullet.
     /// </summary>
-	public class PowerupBullet : Collectible 
-	{
+	public class PowerupBullet : Collectible
+    {
         /// <summary>
         /// Amount of shots before returning to the default bullet.
         /// </summary>
         public int amount = 5;
-        
+
         /// <summary>
         /// Index of the new bullet, on the Player script, that should be assigned.
         /// </summary>
@@ -26,21 +26,23 @@ namespace TanksMP
         /// Check for the current bullet and refills its ammunition.
         /// </summary>
 		public override bool Apply(Player p)
-		{
+        {
             if (p == null)
                 return false;
 
+            int value = p.GetView().GetAmmo();
+            int index = p.GetView().GetBullet();
+
             //do not consume powerup if the player owns the new bullet already
             //and the ammunition is at the maximum amount available
-            if (p.currentBullet == bulletIndex && p.ammo == amount)
+            if (value == amount && index == bulletIndex)
                 return false;
 
             //otherwise assign new bullet and refill ammo
-            p.currentBullet = bulletIndex;
-            p.ammo = amount;
+            p.GetView().SetAmmo(amount, bulletIndex);
 
-            //return successful consumption
+            //return successful collection
             return true;
-		}
-	}
+        }
+    }
 }

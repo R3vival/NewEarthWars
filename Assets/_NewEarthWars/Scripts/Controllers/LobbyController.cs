@@ -50,6 +50,7 @@ public class LobbyController : MonoBehaviour
     }
 
     public void SetName(TextMeshProUGUI value) {
-        TankName = value.text == "" ? SelectedFactions + " Tank" : value.text;
+        TankName = value.text;
     }
+    
 }
