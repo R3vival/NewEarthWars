@@ -804,8 +804,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90eb8c1b8b0b8964c85cd2e41d91f1e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundGroups: []
-  mixer: {fileID: 0}
+  soundGroups:
+  - {fileID: 11400000, guid: f7f91c7cf18a7d24f90679ab38b93745, type: 2}
+  mixer: {fileID: 24100000, guid: cc547b0f438c5e345901aa74536720d6, type: 2}
 --- !u!1 &1595097727
 GameObject:
   m_ObjectHideFlags: 0
