@@ -13,13 +13,97 @@ MonoBehaviour:
   m_Name: SoundGroup
   m_EditorClassIdentifier: 
   soundsList:
-  - name: 
+  - name: Disparo 1
     clips:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: c18a7ed3e3de3b6438f8b2a13c597184, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Disparo 2
+    clips:
+    - {fileID: 8300000, guid: d12ac4503f77f90479f0f39b2c855359, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Movimiento tanque 1
+    clips:
+    - {fileID: 8300000, guid: ee6ecc6230c8b3b40adc462b8eb00cff, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Movimiento tanque 2
+    clips:
+    - {fileID: 8300000, guid: ef495c017804f7241abfab8f641242cc, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Movimiento 3
+    clips:
+    - {fileID: 8300000, guid: 178e138dfa58c1941b7a0941c82c4a76, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: SplashScreen Audio
+    clips:
+    - {fileID: 8300000, guid: 021ddca635c9237478a8180a59304f73, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6569673040724626739, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: In Game Music Opt1
+    clips:
+    - {fileID: 8300000, guid: 894832bc27e6a37488335d4cccb2d35b, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6569673040724626739, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: In Game Music Opt2
+    clips:
+    - {fileID: 8300000, guid: 78e0118554f087340a55f9fe580dfd02, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6569673040724626739, guid: cc547b0f438c5e345901aa74536720d6,
       type: 2}
     audioSource: {fileID: 0}
     fadingOut: 0
