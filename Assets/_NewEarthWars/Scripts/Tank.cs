@@ -7,8 +7,8 @@ using UnityEngine;
 namespace NEW.Engine {
     public abstract class Tank : MonoBehaviour {
 
-        #region Declarations        
-        private string name;
+        #region Declarations
+        private string tankName;
         private int health;
         private int maxHealth;
         [Range(1,3)]
@@ -23,7 +23,7 @@ namespace NEW.Engine {
 
         #region Encapsulamiento
         //Encapsulamiento de todas las variables Privadas del tank
-        public string Name { get => name; set => name = value; }
+        public string Name { get => tankName; set => tankName = value; }
         public int Health { get => this.health; set => this.health = value >= 0 ?
                 /*preguntamos si el rango de vida es mayor o igual a 0*/ 
                 value <= MaxHealth ?
@@ -42,7 +42,7 @@ namespace NEW.Engine {
 
         #region Constructor
         public Tank() {
-            this.name = "Tank";            
+            this.tankName = "Tank";            
             this.maxHealth = 100;
             this.health = maxHealth;
             this.energy = 3;
@@ -51,7 +51,7 @@ namespace NEW.Engine {
             this.range = 20;
         }
         public Tank(string name){
-            this.name = name;
+            this.tankName = name;
         }
         #endregion
 

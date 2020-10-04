@@ -6,51 +6,58 @@ using TMPro;
 
 public class LobbyController : MonoBehaviour
 {
-    [Header("Tanks Factory Components")]
-    public GameObject TankPrefab;
-    public Transform garaje;
-    private TanksFactory tanksFactory;
+    #region TankDiscount
 
-    public Factions SelectedFactions;
-    string TankName = "";
+    #endregion
 
-    private void Start() {
+    #region TankSelector
+    //[Header("Tanks Factory Components")]
+    //public GameObject TankPrefab;
+    //[Header("Panels")]
+    //public Transform Garaje;
 
-        tanksFactory = new TanksFactory();
-        SelectedFactions = Factions.Ecother;        
-    }
+    //private TanksFactory tanksFactory;
 
-    public void CreateTank() {
-        Tank createdTank = tanksFactory.CreateTank(SelectedFactions);
-        createdTank.Name = TankName == "" ? SelectedFactions +" Tank" : TankName;
+    //public Factions SelectedFactions;
+    //string TankName = "";
 
-        GarajeTank tank = Instantiate(TankPrefab,garaje).GetComponent<GarajeTank>();
-        tank.tank = createdTank;
-        tank.SetUp();
+    //private void Start() {
 
-    }
+    //    tanksFactory = new TanksFactory();
+    //    SelectedFactions = Factions.Ecother;        
+    //}
 
-    public void SelectFaction(TMP_Dropdown faction) {
-        int index = faction.value;
-        string selectedFaction = faction.options[index].text;
-        switch (selectedFaction) {
-            case "Ecother":
-                SelectedFactions = Factions.Ecother;
-            break;
-            case "Entropy":
-                SelectedFactions = Factions.Entropy;
-                break;
-            case "Revelace":
-                SelectedFactions = Factions.Revelace;
-                break;
-            case "Xential":
-                SelectedFactions = Factions.Xential;
-                break;
-        }
-    }
+    //public void CreateTank() {
+    //    Tank createdTank = tanksFactory.CreateTank(SelectedFactions);
+    //    createdTank.Name = TankName == "" ? SelectedFactions +" Tank" : TankName;
 
-    public void SetName(TextMeshProUGUI value) {
-        TankName = value.text;
-    }
-    
+    //    GarajeTank tank = Instantiate(TankPrefab,Garaje).GetComponent<GarajeTank>();
+    //    tank.tank = createdTank;
+    //    tank.SetUp();
+
+    //}
+
+    //public void SelectFaction(TMP_Dropdown faction) {
+    //    int index = faction.value;
+    //    string selectedFaction = faction.options[index].text;
+    //    switch (selectedFaction) {
+    //        case "Ecother":
+    //            SelectedFactions = Factions.Ecother;
+    //        break;
+    //        case "Entropy":
+    //            SelectedFactions = Factions.Entropy;
+    //            break;
+    //        case "Revelace":
+    //            SelectedFactions = Factions.Revelace;
+    //            break;
+    //        case "Xential":
+    //            SelectedFactions = Factions.Xential;
+    //            break;
+    //    }
+    //}
+
+    //public void SetName(TextMeshProUGUI value) {
+    //    TankName = value.text;
+    //}
+    #endregion
 }
