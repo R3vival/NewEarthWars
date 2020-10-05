@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class NewEarthWarsGameManager : MonoBehaviour {
     [HideInInspector]
-    public static GameManager instance;
+    public static NewEarthWarsGameManager instance;
 
     //To load a New Scene 
     [Required]
