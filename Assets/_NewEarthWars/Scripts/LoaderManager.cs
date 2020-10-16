@@ -57,8 +57,9 @@ public class LoaderManager : MonoBehaviour
 
     private void OnLoadLevelProgressUpdate(float progress) {
         progressText.text = (int)progress + " %";
-    }
 
+    }
+    
     public enum Scenes {
         Loader,
         Lobby,
