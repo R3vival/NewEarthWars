@@ -23,7 +23,7 @@ namespace NEW.Shop {
         }
 
         public string ItemName {
-            get { return ItemName; }
+            get { return itemName; }
         }
 
         public Sprite ItemImage {

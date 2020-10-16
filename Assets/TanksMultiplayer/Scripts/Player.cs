@@ -279,6 +279,7 @@ namespace TanksMP
             //create movement vector based on current rotation and speed
             Vector3 movementDir = transform.forward * moveSpeed * Time.deltaTime;
             //apply vector to rigidbody position
+            NewEarthWarsGameManager.instance.audioManager.Play("Movimiento tanque 1");
             rb.MovePosition(rb.position + movementDir);
         }
 

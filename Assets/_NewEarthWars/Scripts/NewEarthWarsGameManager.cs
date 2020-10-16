@@ -9,9 +9,12 @@ public class NewEarthWarsGameManager : MonoBehaviour {
     public static NewEarthWarsGameManager instance;
 
     //To load a New Scene 
-    [Required]
-    public LoaderManager loaderManager;
+    //[Required]
+    //public LoaderManager loaderManager;
 
+    //[HideInInspector]
+    public AudioManager audioManager;
+    
     [ShowInInspector]
     private GameState currentState;
 
@@ -20,14 +23,18 @@ public class NewEarthWarsGameManager : MonoBehaviour {
         if (instance != null)
             Destroy(this);
         else
-            instance = this;    
-            
+            instance = this;
 
-        SwitchState(GameState.Index);
+        GetAudioManager();
+        //SwitchState(GameState.Index);
     }
     private void Start() {
-        if (currentState == GameState.Index)
-            loaderManager.LoadScene(LoaderManager.Scenes.Lobby);
+        //if (currentState == GameState.Index)
+        //    loaderManager.LoadScene(LoaderManager.Scenes.Lobby);
+    }
+
+    public void GetAudioManager() {
+        audioManager = gameObject.GetComponent<AudioManager>();
     }
 
     public GameState GetGameState() {
