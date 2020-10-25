@@ -53,6 +53,11 @@ namespace TanksMP
         public Slider shieldSlider;
 
         /// <summary>
+        /// Shield Vfx
+        /// </summary>
+        public GameObject shieldVfx;
+
+        /// <summary>
         /// Clip to play when a shot has been fired.
         /// </summary>
         public AudioClip shotClip;
@@ -249,6 +254,7 @@ namespace TanksMP
             //shoot bullet on left mouse click
             if (Input.GetButton("Fire1"))
                 Shoot();
+            
 
 			//replicate input to mobile controls for illustration purposes
 			#if UNITY_EDITOR
@@ -393,6 +399,10 @@ namespace TanksMP
         //(the actual value updates via player properties)
         protected void OnShieldChange(int value)
         {
+            if (value > 0)
+                shieldVfx.SetActive(true);
+            else
+                shieldVfx.SetActive(false);
             shieldSlider.value = value;
         }
 
