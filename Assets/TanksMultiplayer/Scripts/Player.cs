@@ -41,6 +41,14 @@ namespace TanksMP
         /// Movement speed in all directions.
         /// </summary>
         public float moveSpeed = 8f;
+        /// <summary>
+        /// Tank cant move
+        /// </summary>
+        public bool canMove = true;
+        /// <summary>
+        /// Tank Cant Shoot
+        /// </summary>
+        public bool canShoot = true;
 
         /// <summary>
         /// UI Slider visualizing health value.
@@ -231,7 +239,8 @@ namespace TanksMP
                 //read out moving directions and calculate force
                 moveDir.x = Input.GetAxis("Horizontal");
                 moveDir.y = Input.GetAxis("Vertical");
-                Move(moveDir);
+                if (canMove)
+                    Move(moveDir);
             }
 
             //cast a ray on a plane at the mouse position for detecting where to shoot 
@@ -252,7 +261,7 @@ namespace TanksMP
             RotateTurret(new Vector2(hitPos.x, hitPos.z));
 
             //shoot bullet on left mouse click
-            if (Input.GetButton("Fire1"))
+            if (Input.GetButton("Fire1")&& canShoot)
                 Shoot();
             
 
