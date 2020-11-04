@@ -85,6 +85,8 @@ MonoBehaviour:
   turretRotation: 0
   fireRate: 0.75
   moveSpeed: 8
+  canMove: 1
+  canShoot: 1
   healthSlider: {fileID: 114000010106461960}
   shieldSlider: {fileID: 114000010834164622}
   shieldVfx: {fileID: 2767055525344804661}
