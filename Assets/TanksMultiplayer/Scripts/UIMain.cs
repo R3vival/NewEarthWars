@@ -109,6 +109,7 @@ namespace TanksMP
             //UnityAnalyticsManager.MainSceneClosed(shopOpened, settingsOpened, musicToggle.isOn,
             //                      Encryptor.Decrypt(PlayerPrefs.GetString(PrefsKeys.activeTank)));
 
+            NewEarthWarsGameManager.instance.audioManager.PlayOneShot("Interfaz_Sel_Cursor");
             loadingWindow.SetActive(true);
             NetworkManagerCustom.StartMatch((NetworkMode)PlayerPrefs.GetInt(PrefsKeys.networkMode));
             StartCoroutine(HandleTimeout());

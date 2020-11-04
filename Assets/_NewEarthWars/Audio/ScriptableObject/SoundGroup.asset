@@ -109,3 +109,135 @@ MonoBehaviour:
     fadingOut: 0
     fadingIn: 0
     id: 0
+  - name: Teleport Platform
+    clips:
+    - {fileID: 8300000, guid: 94c1d853cb8f9924a9893615eb1b8668, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Tank_selection
+    clips:
+    - {fileID: 8300000, guid: 8872c8fe387da79409ad96c4e2d027b6, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6799680445098980131, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Interfaz_Pausa
+    clips:
+    - {fileID: 8300000, guid: bd90db2e43d67df49b26c07ffcdf2446, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6799680445098980131, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Interfaz_Mov_Cursor
+    clips:
+    - {fileID: 8300000, guid: e530239e134e7294dbcb9c0d6ec3ad79, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6799680445098980131, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Interfaz_Sel_Cursor
+    clips:
+    - {fileID: 8300000, guid: f2073f5cd317f60468b9ed8d5f07c6b7, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -6799680445098980131, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Colision_Tank
+    clips:
+    - {fileID: 8300000, guid: 3ecfc5cca89792e4faab70989b2445c1, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: PowerUp1
+    clips:
+    - {fileID: 8300000, guid: dcc69c724d00c62468bf19d8dc352e7a, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: PowerUp2 Blaster
+    clips:
+    - {fileID: 8300000, guid: 3fde997856457c944bdfd661147e03f2, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: PowerUp3 Shield
+    clips:
+    - {fileID: 8300000, guid: 08bbe6e4166515c4b8f8efd308676a19, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: PowerUp_3
+    clips:
+    - {fileID: 8300000, guid: 7914e49a6194b7f4f8aed18c2c76c0bc, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
+  - name: Power_Up5 MegaVoice
+    clips:
+    - {fileID: 8300000, guid: f60964c3b15849f49b3dda7655a68ffe, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: -9169179966710217261, guid: cc547b0f438c5e345901aa74536720d6,
+      type: 2}
+    audioSource: {fileID: 0}
+    fadingOut: 0
+    fadingIn: 0
+    id: 0
