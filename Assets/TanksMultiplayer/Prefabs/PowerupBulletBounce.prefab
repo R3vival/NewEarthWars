@@ -46,6 +46,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -189,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53a370524778fc4d838cf0c5a9d2069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useClip: {fileID: 8300000, guid: 30cbc4f0e846df04d9c25940ff239106, type: 3}
+  useClip: {fileID: 8300000, guid: f1f79793accb4054ca3783a8f53f9094, type: 3}
   spawner: {fileID: 0}
   carrierId: -1
   amount: 3
